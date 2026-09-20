@@ -1,3 +1,5 @@
+# My first exercise that really tested my knowledge on Python structures especially if-elif-else statements.
+
 classes = ["ASSASSIN","MAGE","FIGHTER"]
 ranks = ["IRON","BRONZE","SILVER","GOLD","PLATINUM","DIAMOND","CHAMPION"]
 
