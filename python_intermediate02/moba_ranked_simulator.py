@@ -1,3 +1,7 @@
+# A MOBA Ranked Game Prediction Simulator (Very scuffed)
+# This basically asks for your hero's class and level and determines a playstyle suited for the role.
+# This also displays matchups and how your rank game will turn out.
+
 classes = ["ASSASSIN","MAGE","FIGHTER"]
 ranks = ["IRON","BRONZE","SILVER","GOLD","PLATINUM","DIAMOND","CHAMPION"]
 
