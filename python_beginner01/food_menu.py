@@ -1,3 +1,7 @@
+# another scuffed practice on creating a food menu
+# it will always loop as long as the customer wants to order again
+# it calculates the total price of the order
+
 burger_pr=5
 fries_pr=2
 chicken_pr=10
@@ -18,41 +22,41 @@ print(
 
 score=0
 order_total=0
-customer_order=input("What will you be ordering? (1 for Burger, 2 for Fries, ...): ")
 
-match customer_order:
-    case "1":
-        print("Burger it is!")
-        order_total+=burger_pr
-        score+=1
-    case "2":
-        print("Fries it is!")
-        order_total+=fries_pr
-    case "3":
-        print("Chicken it is!")
-        order_total+=chicken_pr
-        score+=1
-    case "4":
-        print("Steak it is!")
-        order_total+=steak_pr
-        score+=1
-    case "5":
-        print("Softdrink it is!")
-        order_total+=soft_pr
-        score+=1
-    case _:
-        print("I'm sorry that isn't on the menu.")
+def order(customer_order,order_total,burger_pr,fries_pr,chicken_pr,steak_pr,soft_pr):
+    match customer_order:
+        case "1":
+            print("Burger it is!")
+            order_total+=burger_pr
+            
+        case "2":
+            print("Fries it is!")
+            order_total+=fries_pr
+        case "3":
+            print("Chicken it is!")
+            order_total+=chicken_pr
+            
+        case "4":
+            print("Steak it is!")
+            order_total+=steak_pr
+            
+        case "5":
+            print("Softdrink it is!")
+            order_total+=soft_pr
+        case _:
+            print("I'm sorry that isn't on the menu.")
+    return order_total
 
-print(f'Your current total is ${order_total}.')
-customer_again=input("Would you like to order again? (y/n): ")
+while True:
+    customer_order = input("What will you be ordering? (1 for Burger, 2 for Fries, ...): ")
+    order_total = order(customer_order, order_total, burger_pr, fries_pr, chicken_pr, steak_pr, soft_pr)
+    print(f'Your current total is ${order_total}.')
 
-
-if customer_again=="y":
-    customer_order=input("What will you be ordering? (1 for Burger, 2 for Fries, ...): ")
-    score=0
-elif customer_again=="n":
-    print(f'Great! Thank you for ordering at Foodies!')
-    print(f'Your total is {order_total}!')
+    customer_again = input("Would you like to order again? (y/n): ")
+    if customer_again == "n":
+        print("Great! Thank you for ordering at Foodies!")
+        print(f'Your total is ${order_total}!')
+        break
 
 
         
