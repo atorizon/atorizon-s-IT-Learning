@@ -9,22 +9,22 @@ def numbers():
 def add():
     num1,num2=numbers()
     sum=num1+num2
-    print(f'Sum: {sum}')
+    print(f'\nSum: {sum}')
 
 def sub():
     num1,num2=numbers()
     diff=num1-num2
-    print(f'Difference: {diff}')
+    print(f'\nDifference: {diff}')
 
 def multiply():
     num1,num2=numbers()
     prod=num1*num2
-    print(f'Product: {prod}')
+    print(f'\nProduct: {prod}')
 
 def divide():
     num1,num2=numbers()
     quo=num1/num2
-    print(f'Quotient: {quo}')
+    print(f'\nQuotient: {quo}')
 
 def function_match():
     operation=input("Enter an arithmetic operation (+, -, *, /): ")
@@ -37,6 +37,8 @@ def function_match():
             multiply()
         case "/":
             divide()
+        case _:
+            print("Invalid Operation.")
 
 while True:
     function_match()
