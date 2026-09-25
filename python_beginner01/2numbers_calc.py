@@ -1,6 +1,6 @@
 # A very simple calculator that only calculates 2 numbers.
 # This practice mainly exercises my fundamentals in functions and a bit of match-case statements.
-
+# i made this on sept 24 but i dont know why it doesnt show on the contributions
 
 def numbers():
     num1=int(input("Enter first number: "))
