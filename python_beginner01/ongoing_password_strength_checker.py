@@ -1,4 +1,5 @@
 # This password checker made my head ache (i think i had too many reqs)
+# sept 26, added a list of invalid passwords inputted
 
 """
 Minimum Requirements for a Password:
@@ -16,6 +17,7 @@ Requirements for a Strong Password:
 """
 score=0
 special_char="!@#$%^&*"
+used_passwords=[]
 def requirements(password):
     pass_upper=False
     pass_lower=False
@@ -69,6 +71,7 @@ while score < 4 or pass_upper==False or pass_lower==False or pass_digit==False o
         print("Your password must have a DIGIT.")
     if not length_enough:
         print("Your password must be at least 8 characters.")
+    used_passwords.append(password)
 
     password = input("Enter a password: ")
     pass_upper, pass_lower, pass_digit, length_enough=requirements(password)
@@ -86,4 +89,5 @@ if score >=4:
 
 
 print("Successful!")
+print(used_passwords)
 
