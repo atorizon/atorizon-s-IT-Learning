@@ -1,6 +1,6 @@
 # This password checker made my head ache (i think i had too many reqs)
 # sept 26, added a list of invalid passwords inputted
-
+# this comment is just for testing since my contributions from my macbook arent registering
 """
 Minimum Requirements for a Password:
     8 characters
