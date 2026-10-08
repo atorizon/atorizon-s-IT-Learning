@@ -4,6 +4,19 @@
 order_total=0
 food_receipt=[]
 current_order=[]
+
+garlic_chk=6
+sign_chk=9
+honey_chk=7
+
+cheese_burg=4
+chick_burg=5
+reg_burg=3
+
+lemon_juice=2
+sweet_soda=3
+water=1
+
 def food_category(category_choice,current_order):
     match category_choice:
         case "1":
@@ -38,14 +51,17 @@ def food_category(category_choice,current_order):
 
 
 def specific_food(food_choice,current_order,food_receipt):
+    order_total=0
     match food_choice.upper():
         case "A":
             if current_order[0]=="1":
                 print("Great! Garlic Chicken it is!")
                 food_receipt.append("Garlic Chicken")
+                order_total+=garlic_chk
             elif current_order[0]=="2":
                 print("Great! Cheeseburger it is!")
                 food_receipt.append("Cheeseburger")
+                order_total+=sign_chk
             elif current_order[0]=="3":
                 print("Great! Lemon Juice it is!")
                 food_receipt.append("Lemon Juice")
