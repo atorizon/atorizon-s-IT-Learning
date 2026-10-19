@@ -11,7 +11,7 @@ Last updated: October 17, 2026
 - [x] f-strings
 - [x] Arithmetic, comparison, and logical operators (`and`, `or`, `not`)
 - [x] `%` (modulo) and `//` (floor division)
-- [ ] Operator precedence and `**` for exponents
+- [x] Operator precedence and `**` for exponents
 - [ ] `round()`, `abs()`, and the `math` module
 
 ## 2. Control Flow
