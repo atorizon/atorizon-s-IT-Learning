@@ -25,7 +25,7 @@ while True:
         if comp_score == 5:
             print("Computer wins!")
             break
-        elif user_score==5:
+        else:
             print("User wins!")
             break
     else:
